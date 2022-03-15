@@ -35,7 +35,7 @@
 			"attributeOptionComboId": "XXX",
 			"dataElements": [{
 				"dataElementName": "HIV patients on treatment",
-				"disagregations": [{
+				"disaggregations": [{
 						"key": "gender",
 						"index": 1
 					},
