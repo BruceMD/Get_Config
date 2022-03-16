@@ -47,6 +47,50 @@
 				"dataSetId": "h9tog9xQPZ6",
 				"dataElementId": "nEyxdIJ5QH8",
 				"categoryOptionComboId": "d0DuqWPtfZz"
+			},
+					{
+				"dataElementName": "HIV patients on treatment",
+				"disaggregations": [{
+						"key": "gender",
+						"index": 1
+					},
+					{
+						"key": "ageGroup",
+						"index": 1
+					}
+				],
+				"dataSetId": "h9tog9xQPZ6",
+				"dataElementId": "nEyxdIJ5QH8",
+				"categoryOptionComboId": "d0DuqWPtfZz"
+			},
+					{
+				"dataElementName": "HIV patients on treatment",
+				"disaggregations": [{
+						"key": "gender",
+						"index": 0
+					},
+					{
+						"key": "ageGroup",
+						"index": 0
+					}
+				],
+				"dataSetId": "h9tog9xQPZ6",
+				"dataElementId": "nEyxdIJ5QH8",
+				"categoryOptionComboId": "d0DuqWPtfZz"
+			}{
+				"dataElementName": "HIV patients on treatment",
+				"disaggregations": [{
+						"key": "gender",
+						"index": 0
+					},
+					{
+						"key": "ageGroup",
+						"index": 1
+					}
+				],
+				"dataSetId": "h9tog9xQPZ6",
+				"dataElementId": "nEyxdIJ5QH8",
+				"categoryOptionComboId": "d0DuqWPtfZz"
 			}]
 		}
 	}]
