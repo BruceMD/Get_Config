@@ -5,29 +5,24 @@
 		"creationDate": "2022-03-02",
 		"category": "dhis-data-elements-metadata"
 	},
-	"reports": [
-		{
+	"reports": [{
 		"reportName": "HIV report",
-		"parameters": [
-			{
+		"parameters": [{
 				"key": "gender",
 				"options": ["male", "female"]
 			},
 			{
 				"key": "ageGroup",
-				"ranges": [
-					{
+				"ranges": [{
 					"min": 1,
 					"max": 4
-				}, 
-				{
+				}, {
 					"min": 5,
 					"max": 9
 				}]
 			}
 		],
-		"dataElements": [
-			{
+		"dataElements": [{
 				"dataElementName": "HIV patients on treatment",
 				"query": "SELECT ... WHERE gender =  $gender AND age BETWEEN $ageGroup.min AND $ageGroup.max "
 			},
@@ -41,8 +36,7 @@
 			"dataElements": [
 				{
 				"dataElementName": "HIV patients on treatment",
-				"disaggregations": [
-					{
+				"disaggregations": [{
 						"key": "gender",
 						"index": 1
 					},
