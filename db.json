@@ -213,6 +213,142 @@
                     }
                 ]
             }
+        },
+        {
+            "reportName": "HIV Report",
+            "parameters": [
+                {
+                    "key": "ageGroupInYears",
+                    "ranges": [
+                        {
+                            "min": 0,
+                            "max": 1
+                        },
+                        {
+                            "min": 1,
+                            "max": 4
+                        },
+						{
+							"min": 5,
+							"max": 9
+						}
+                    ]
+                },
+                {
+                    "key": "gender",
+                    "options": [
+                        "M", 
+                        "F"
+                    ]
+                }
+            ],
+            "dataElements": [
+                {
+                    "dataElementName":"Number of patients starting ARV treatment",
+                    "query":"SELECT HIV_REPORT('#startDate#','#endDate#', #ageGroupInYears.min#, #ageGroupInYears.max#, 0, '#gender#')"
+                }
+            ],
+            "dhis2Mapping":{
+                "attributeOptionComboId": "",
+                "dataElements": [
+                    {
+                        "dataElementName":"Number of patients starting ARV treatment",
+                        "disaggregations": [
+                            {
+                                "key": "gender",
+                                "index": 0
+                            },
+                            {
+                                "key": "ageGroupInYears",
+                                "index": 0
+                            }
+                        ],
+                        "dataSetId": "kjaHi7g7Bs",
+                        "dataElementId": "esf6tSB7a8h",
+                        "categoryOptionComboId": "akdjbnIB729s"
+                    },
+                    {
+                        "dataElementName":"Number of patients starting ARV treatment",
+                        "disaggregations": [
+                            {
+                                "key": "gender",
+                                "index": 1
+                            },
+                            {
+                                "key": "ageGroupInYears",
+                                "index": 0
+                            }
+                        ],
+                        "dataSetId": "kjaHi7g7Bs",
+                        "dataElementId": "esf6tSB7a8h",
+                        "categoryOptionComboId": "akdjbnIB729s"
+                    },
+                    {
+                        "dataElementName":"Number of patients starting ARV treatment",
+                        "disaggregations": [
+                            {
+                                "key": "gender",
+                                "index": 0
+                            },
+                            {
+                                "key": "ageGroupInYears",
+                                "index": 1
+                            }
+                        ],
+                        "dataSetId": "kjaHi7g7Bs",
+                        "dataElementId": "esf6tSB7a8h",
+                        "categoryOptionComboId": "akdjbnIB729s"
+                    },
+                    {
+                        "dataElementName":"Number of patients starting ARV treatment",
+                        "disaggregations": [
+                            {
+                                "key": "gender",
+                                "index": 1
+                            },
+                            {
+                                "key": "ageGroupInYears",
+                                "index": 1
+                            }
+                        ],
+                        "dataSetId": "kjaHi7g7Bs",
+                        "dataElementId": "esf6tSB7a8h",
+                        "categoryOptionComboId": "akdjbnIB729s"
+                    },
+                    {
+                        "dataElementName":"Number of patients starting ARV treatment",
+                        "disaggregations": [
+                            {
+                                "key": "gender",
+                                "index": 0
+                            },
+                            {
+                                "key": "ageGroupInYears",
+                                "index": 2
+                            }
+                        ],
+                        "dataSetId": "kjaHi7g7Bs",
+                        "dataElementId": "esf6tSB7a8h",
+                        "categoryOptionComboId": "akdjbnIB729s"
+                    },
+                    {
+                        "dataElementName":"Number of patients starting ARV treatment",
+                        "disaggregations": [
+                            {
+                                "key": "gender",
+                                "index": 1
+                            },
+                            {
+                                "key": "ageGroupInYears",
+                                "index": 2
+                            }
+                        ],
+                        "dataSetId": "kjaHi7g7Bs",
+                        "dataElementId": "esf6tSB7a8h",
+                        "categoryOptionComboId": "akdjbnIB729s"
+                    }
+                ]
+            }
         }
     ]
 }
